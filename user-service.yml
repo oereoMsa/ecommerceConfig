@@ -1,0 +1,16 @@
+spring:
+    datasource:
+        url: jdbc:h2:mem:ecommercePracticeDB
+        username: sa
+        password: 1234
+        driver-class-name: org.h2.Driver
+
+token:
+    expiration_time: 86400000
+    secret: user_service_token_default
+
+gateway:
+    ip: 192.168.123.100
+
+order_service:
+    url: http://127.0.0.1:8000/order-service/%s/orders
